@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/joinlogo.png">
+    <script src="./script.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/mini_backend.js"></script>
+    <title> Join - Help </title>
+</head>
+
+<body onload="init_help()">
+
+    <div class="sidebar-container">
+        <div class="sidebar" w3-include-html="templates/sidebar.html"></div>
+    </div>
+    <div id="sidebar-container-mobil" class="sidebar-container-mobil">
+        <div class="sidebar-mobil" w3-include-html="templates/sidebar_mobil.html"></div>
+    </div>
+    <div class="help-container" id="help-container">
+        <div class="help-content-container">
+            <div class="help-headline">
+                <p class="aktive-help" id="help-headline-first-steps" onclick="render_first_steps_at_help()"> Welcome
+                </p>
+                <p id="help-headline-add-task" onclick="render_add_task_at_help()"> Add Task</p>
+                <p id="help-headline-backlog" onclick="render_backlog_at_help()"> Backlog</p>
+                <p id="help-headline-board" onclick="render_board_at_help()"> Board </p>
+                <p id="help-headline-archiv" onclick="render_archiv_at_help()"> Archive </p>
+                <p id="help-headline-impressum" onclick="render_impressum_at_help()"> Imprint </p>
+            </div>
+            <div id="help-choosed-content" class="help-choosed-content">
+                <img id="help-choosed-image" class="help-image" src="./img/welcome_help.png">
+                <p id="help-choosed-text">Welcome to the Join page of: Hong Hanh Chu, Ole Engelhardt and Fabian
+                    Kalus.<br>
+                    This is a project management tool based on the Kanban method to manage your projects and tasks. <br>
+                    Please navigate through our help section to see how you can use Join most
+                    efficiently.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

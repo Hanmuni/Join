@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/joinlogo.png">
+    <script src="./script.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/mini_backend.js"></script>
+    <title> Join - Login </title>
+</head>
+
+<body onload="init()">
+
+    <div class="login-overcontainer">
+        <div class="login-container">
+            <div class="login-header"><img src="./img/joinlogo.png"></div>
+            <div class="login-content">
+                <p>Username</p>
+                <input id="login-username">
+                <p>Passwort</p>
+                <div class="login-passwort-container">
+                    <input id="login-passwort" type="password">
+                    <img class="passwort-image" onclick="change_passwort_button_type()"
+                        src="./img/eye-gbabc96aa1_640.png">
+                </div>
+                <div class="login-button-container">
+                    <button class="login-button" onclick="check_login()">LOGIN</button>
+                    <button class="guest-login-button" onclick="guest_login()">GUEST LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
